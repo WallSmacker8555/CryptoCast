@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            ul {
+        list-style: none;
+      }
+      ol {
+        list-style: none;
+      }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CryptoCast</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                require("smart_contract");
+                require()
+
+                console.alert("hi");
+                const elections = getData();
+                console.alert(elections);
+
+                var ul = document.getElementById("elections");    
+                for (var i = 0; i < 5; i++){    
+                    var li = document.createElement('li');    
+                    ul.appendChild(li);
+                    li.innerHTML = li.innerHTML + "<div class=\"election\">  </div>";
+                }
+            }, false);
+        </script>
+        <div>
+            <img src="../img/CryptoCastLogo.png" class = "logo">
+            <br><br>
+            <ul id="elections">
+                
+            </ul> 
+        </div>
+    </body>  
+</html>
+
+<style>
+    .election {
+        background-color: whitesmoke;
+        margin: 20px;
+        width: 70%;
+        padding-left: 30%;
+        padding-right: 30%;
+        box-shadow: 10px;
+        color: black;
+        font-size: 25px;
+        font-family: "Century Gothic";
+        border-radius: 25px;
+        padding: 20px;
+    }
+</style>

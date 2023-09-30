@@ -1,10 +1,10 @@
 
-function getData() {
+async function getData() {
     const numElections = await electionFactory.numElections();
     let elections;
     for (let i = 0; i < numElections; i++) {
-        elections[i] = await electionFactory.elections();
+        elections[i] = await electionFactory.elections(i);
     }
     
-    console.log(election[0]);
+    return elections;
 }
