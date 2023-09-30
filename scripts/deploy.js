@@ -7,12 +7,13 @@
 const hre = require("hardhat");
 
 async function main() {
-const currentTimestampInSeconds = Math.round(Date.now() / 1000);
   const electionFactory = await hre.ethers.deployContract("ElectionFactory");
-
   await electionFactory.waitForDeployment();
-
+  
   console.log("electionFactory deployed");
+  const addr = await electionFactory.getAddress();
+  
+  console.log("address: " + addr + "\n");
 }
 
 // We recommend this pattern to be able to use async/await everywhere

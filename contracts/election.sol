@@ -1,3 +1,4 @@
+//SPDX-License-Identifier: UNLICENSED
 pragma solidity >0.5.1;
 
 contract Election {
@@ -24,11 +25,11 @@ contract Election {
         _;
     }
    
-    constructor(String memory _name, uint _start, uint _end) {
-        name = _name;
-        range = Range(_start, _end);
-        admin = msg.sender;
-    } 
+    // constructor(String memory _name, uint _start, uint _end) {
+    //     name = _name;
+    //     range = Range(_start, _end);
+    //     admin = msg.sender;
+    // } 
 
     constructor() {
         admin = msg.sender;
@@ -54,7 +55,7 @@ contract Election {
     
 
    function setValidRange(uint _start, uint _end) public onlyAdmin() {
-        range = new Range(_start, _end);
+        range = Range(_start, _end);
     }
     
     function setName(string memory _name) public onlyAdmin() {
@@ -64,12 +65,12 @@ contract Election {
 
 contract ElectionFactory {
     uint numElections = 0;
-    election[] public elections;
+    Election[] public elections;
     
-    address factoryAdmin
+    address factoryAdmin;
     
-    constructor() public {
-        msg.sender = factoryAdmin;
+    constructor() {
+        factoryAdmin = msg.sender;
     }
     
     modifier onlyFactoryAdmin() {
@@ -79,6 +80,6 @@ contract ElectionFactory {
     
     function createElection() public onlyFactoryAdmin() {
         Election election = new Election();
-        elections.push(election)
+        elections.push(election);
     }
 }
