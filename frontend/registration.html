@@ -10,13 +10,27 @@
     <body>
         <div>
             <img src="../img/CryptoCastLogo.png" class = "logo">
-            <br><br>
-            <div class="form">
+            <br>
+            <div class="reg_form">
                 <form>
-                    <label for="fname">First name</label><br>
-                    <input type="text"><br>
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname">
+                    <fieldset class="reg_field_set">
+                        <legend><strong>Registration Info</strong></legend>
+                        <label for="fname"><em>First Name</em></label><br>
+                        <input type="text" id="fname" placeholder="eg. Jane"><br>
+                        <label for="lname"><em>Last Name</em></label><br>
+                        <input type="text" id="lname" placeholder="eg. Doe"><br>
+                        <label for="dob"><em>Date of Birth</em></label><br>
+                        <input type="text" id="dob" placeholder="MM/DD/YYYY"><br>
+                        <label for="addr"><em>Street Address</em></label><br>
+                        <input type="text" id="addr" placeholder="eg. 123 Bitcoin Lane"><br>
+                        <label for="state"><em>State</em></label><br>
+                        <input type="text" id="state" placeholder="eg. WI"><br>
+                        <label for="zip"><em>Zip Code</em></label><br>
+                        <input type="text" id="zip" placeholder="eg. 12345"><br>
+                        <label for="state_id"><em>Driver's License / Identification No.</em></label><br>
+                        <input type="text" id="state_id" placeholder="eg. S123-3210-1230-00"><br><br>
+                        <input type="submit" value="Register" class="reg_sub">
+                    </fieldset>
                 </form>
             </div>
         </div>
