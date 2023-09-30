@@ -55,6 +55,35 @@ body {
     cursor: pointer;
 }
 
+.admin_verif_form {
+    margin: auto;
+    width: 15%;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: rgb(15, 15, 15)
+}
+
+.admin_verif_field_set {
+    border-color: rgb(255, 58, 58);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.admin_verif_sub {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 3px;
+    cursor: pointer;
+    background-color: #58C3FD;
+    color: rgb(0, 0, 0);
+    width: 175px;
+    height: 30px;
+}
+
 .reg_form {
     margin: auto;
     width: 25%;
@@ -89,4 +118,62 @@ body {
     width: 30%;
     text-align: center;
     font-family: "Century Gothic";
+}
+
+.vote_form {
+    margin: auto;
+    width: 25%;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: rgb(15, 15, 15)
+}
+
+.vote_field_set {
+    border-color: rgb(255, 58, 58);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.vote_sub {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 3px;
+    cursor: pointer;
+    background-color: #58C3FD;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 35px;
+}
+
+.ballot_form {
+    margin: auto;
+    width: 25%;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: rgb(15, 15, 15)
+}
+
+.ballot_field_set {
+    border-color: rgb(255, 58, 58);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.ballot_sub {
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-width: 3px;
+    cursor: pointer;
+    background-color: #58C3FD;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    height: 35px;
 }

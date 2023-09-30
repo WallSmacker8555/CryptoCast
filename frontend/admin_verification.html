@@ -9,15 +9,16 @@
     </head>
     <body>
         <div>
-            <img src="../img/CryptoCastLogo.png" class = "logo">
+            <a href="index.html"><img src="../img/CryptoCastLogo.png" class = "logo"></a>
             <br><br>
-            <div class="button">
+            <div class="admin_verif_form">
                 <form action="admin.html">
-                    <label for="sec_code">Security Code</label><br>
-                    <input type="text"><br>
-                    <button type="submit">
-                        <strong>Submit</strong>
-                    </button>
+                    <fieldset class="admin_verif_field_set">
+                        <legend><strong>Verification</strong></legend>
+                        <label for="sec_code"><em>Security Code</em></label><br>
+                        <input type="text" id="sec_code"><br><br>
+                        <input type="submit" value="Access Admin Hub" class="admin_verif_sub">
+                    </fieldset>
                 </form>
             </div>
         </div>
