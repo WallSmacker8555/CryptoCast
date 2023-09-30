@@ -25,13 +25,9 @@ contract Election {
         _;
     }
    
-    // constructor(String memory _name, uint _start, uint _end) {
-    //     name = _name;
-    //     range = Range(_start, _end);
-    //     admin = msg.sender;
-    // } 
-
-    constructor() {
+    constructor(string memory _name, uint _start, uint _end) {
+        name = _name;
+        range = Range(_start, _end);
         admin = msg.sender;
     } 
     
@@ -78,8 +74,8 @@ contract ElectionFactory {
         _;
     }
     
-    function createElection() public onlyFactoryAdmin() {
-        Election election = new Election();
+    function createElection(string memory _name, uint _start, uint _end) public onlyFactoryAdmin() {
+        Election election = new Election(_name, _start, _end);
         elections.push(election);
     }
 }
