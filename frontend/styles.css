@@ -2,9 +2,11 @@ body {
     background-color: #32aff3;
 }
 
-.main {
+.logo {
     margin: auto;
-    width: 20%;
+    padding-left: 30.5%;
+    padding-right: 31%;
+    width: 500px;
 }
 
 .button {
@@ -20,8 +22,9 @@ body {
     border-color: white;
     border-radius: 25px;
     border-width: 7px;
-    width: 250px;
+    width: 90%;
     height: 100px;
+    cursor: pointer;
 }
 
 .vote_but {
@@ -32,6 +35,25 @@ body {
     border-color: white;
     border-radius: 25px;
     border-width: 7px;
-    width: 250px;
+    width: 90%;
     height: 100px;
+    cursor: pointer;
+}
+
+.admin_but {
+    background-color: #c2b9b9;
+    color: rgb(253, 255, 221);
+    font-size: 25px;
+    font-family: "Century Gothic";
+    border-color: rgb(228, 217, 217);
+    border-radius: 25px;
+    border-width: 7px;
+    width: 90%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.form {
+    margin: auto;
+    width: 20%;
 }
