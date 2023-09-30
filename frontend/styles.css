@@ -81,3 +81,10 @@ body {
     width: 150px;
     height: 35px;
 }
+
+.reg_confirm {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    font-family: "Century Gothic";
+}
