@@ -8,18 +8,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  const electionFactory = await hre.ethers.deployContract("ElectionFactory");
+  global.contract = await hre.ethers.deployContract("ElectionFactory");
   await electionFactory.waitForDeployment();
   
   console.log("electionFactory deployed");
   const addr = await electionFactory.getAddress();
   
-  const numElections = await electionFactory.numElections();
-  let elections;
-  for (let i = 0; i < numElections; i++) {
-      elections[i] = await electionFactory.elections(i);
-  }
-
   console.log("address: " + addr + "\n");
 }
 
