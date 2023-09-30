@@ -9,31 +9,26 @@
     </head>
     <body>
         <div>
-            <img src="../img/CryptoCastLogo.png" class = "logo">
+            <a href="index.html"><img src="../img/CryptoCastLogo.png" class="logo"></a>
             <br><br>
-            <button class="admin_but" type="submit" onclick="window.location.href='create_election.html';" class="admin_but">
-                Create Election
-            </button>
-            <p> </p>
-            <style>
-                .column {
-                    margin: auto;
-                    
-                    padding-block: 10px;
-                    float:inline-start;
-                }
-            </style>
-            <div class="row">
-                <div class="column">
-                    <button type="submit" onclick="window.location.href='view_ongoing.html';" class="admin_but">
-                        View Ongoing Elections
+            <div class="button">
+                <form action="create_election.html">
+                    <button type="submit" class="create_but">
+                        <strong>Create Election</strong>
                     </button>
-                </div>
-                <div class="column">
-                    <button type="submit" onclick="window.location.href='view_past.html';" class="admin_but">
-                        View Past Elections
+                </form>
+                <br>
+                <form action="view_ongoing.html">
+                    <button type="submit" class="view_curr_but">
+                        <strong>View Ongoing Elections</strong>
                     </button>
-                </div>
+                </form>
+                <br>
+                <form action="view_past.html">
+                    <button type="submit" class="view_past_but">
+                        <strong>View Past Elections</strong>
+                    </button>
+                </form>
             </div>            
         </div>
     </body>
