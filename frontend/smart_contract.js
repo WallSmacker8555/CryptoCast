@@ -1,3 +1,4 @@
+const hre = require("hardhat");
 
 async function getData() {
     const numElections = await electionFactory.numElections();
