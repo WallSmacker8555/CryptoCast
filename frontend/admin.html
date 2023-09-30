@@ -11,41 +11,30 @@
         <div>
             <img src="../img/CryptoCastLogo.png" class = "logo">
             <br><br>
-            <div class="form">
-                <form action="create_election.html">
-                    <button type="submit" class="reg_but">
-                        Create Election
-                    </button>
-                </form>
-                    <p> </p>
-                    <style>
-                    .column {
-                        margin: auto;
-                        padding-block: 10px;
-                        float: left;
-                        width: 50%;
-                      }
-                    </style>
-
-                    <div class="row">
-                        <div class="column">
-                            <form action="view_ongoing.html">
-                                <button type="submit" class="reg_but">
-                                    View Ongoing Elections
-                                </button>
-                            </form>
-                        </div>
-                        <div class="column">
-                            <form action="view_past.html">
-                                <button type="submit" class="reg_but">
-                                    View Past Elections
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+            <button class="admin_but" type="submit" onclick="window.location.href='create_election.html';" class="admin_but">
+                Create Election
+            </button>
+            <p> </p>
+            <style>
+                .column {
+                    margin: auto;
                     
-                </form>
-            </div>
+                    padding-block: 10px;
+                    float:inline-start;
+                }
+            </style>
+            <div class="row">
+                <div class="column">
+                    <button type="submit" onclick="window.location.href='view_ongoing.html';" class="admin_but">
+                        View Ongoing Elections
+                    </button>
+                </div>
+                <div class="column">
+                    <button type="submit" onclick="window.location.href='view_past.html';" class="admin_but">
+                        View Past Elections
+                    </button>
+                </div>
+            </div>            
         </div>
     </body>
 </html>

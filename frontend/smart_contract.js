@@ -8,3 +8,8 @@ async function getData() {
     
     return elections;
 }
+
+
+function main() {
+    console.alert("Hi");
+}
