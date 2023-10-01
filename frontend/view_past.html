@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style>
-            ul {
-        list-style: none;
-      }
-      ol {
-        list-style: none;
-      }
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CryptoCast</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    </head>
-    <body>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                //require("smart_contract");
 
-                console.alert("hi");
-                // const elections = getData();
-                // console.alert(elections);
+<head>
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
 
-                var ul = document.getElementById("elections");    
-                for (var i = 0; i < 5; i++){    
-                    var li = document.createElement('li');    
-                    ul.appendChild(li);
-                    li.innerHTML = li.innerHTML + "<div class=\"election\">  </div>";
-                }
-            }, false);
-        </script>
-        <div>
-            <img src="../img/CryptoCastLogo.png" class = "logo">
-            <br><br>
-            <ul id="elections">
-                
-            </ul> 
-        </div>
-    </body>  
+<body>
+    <script type="module">
+        const { ethers } = require("ethers");
+        async function getData() {
+            const electionFactory = window.data;
+
+            const numElections = electionFactory.numElections();
+            let elections;
+            for (let i = 0; i < numElections; i++) {
+                elections[i] = await electionFactory.elections(i);
+            }
+
+            return elections;
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var ul = document.getElementById("elections");
+            ul.innerHTML = "hot"
+            const elections = getData();
+
+            var ul = document.getElementById("elections");
+            for (var i = 0; i < 5; i++) {
+                var li = document.createElement('li');
+                ul.appendChild(li);
+                li.innerHTML = li.innerHTML + "<div class=\"election\">  </div>";
+            }
+        }, false);
+    </script>
+    <div>
+        <img src="../img/CryptoCastLogo.png" class="logo">
+        <br><br>
+        <ul id="elections">
+
+        </ul>
+    </div>
+</body>
+
 </html>
 
 <style>

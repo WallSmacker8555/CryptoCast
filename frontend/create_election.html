@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CryptoCast</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    </head>
-    <body>
-        <div>
-            <img src="../img/CryptoCastLogo.png" class = "logo">
-            <br><br>
-        </div>
-        <form>
-            
-        </form>
 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script type="text/javascript">
+        function createElection() {
+            const name = document.getElementById("name").value;
+            const start = document.getElementById("start").value;
+            const end = document.getElementById("end").value;
+
+            // call solidity            
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="index.html"><img src="../img/CryptoCastLogo.png" class="logo"></a>
+        <br>
+        <div class="reg_form">
+            <form>
+                <fieldset class="reg_field_set">
+                    <legend><strong>Election Details</strong></legend>
+                    <label for="election_name"><em>Name</em></label><br>
+                    <input type="text" id="name" placeholder="eg. '24 Federal Election"><br>
+                    <label for="start"><em>Start date</em></label><br>
+                    <input type="text" id="start" placeholder="MM/DD/YYYY"><br>
+                    <label for="end"><em>End date</em></label><br>
+                    <input type="text" id="end" placeholder="eg. MM/DD/YYYY"><br>
+                    <p></p>
+                    <input type="submit" onclick=createElection() value="Submit" class="reg_sub">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>
