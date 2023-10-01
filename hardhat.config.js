@@ -5,7 +5,7 @@ module.exports = {
   solidity: "0.8.19",
   networks: {
     buildbear: {
-      url: 'https://rpc.buildbear.io/convinced-lama-su-d335693f',
+      url: "https://rpc.buildbear.io/warm-ki-adi-mundi-fb8ba0a1"
     }
   }
 };

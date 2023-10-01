@@ -25,9 +25,5 @@ module.exports = {
     hardhat: { // used to connect localhost hardhat node to metamask
       chainId: 1337,
     },
-    sepolia: {
-      url: 'https://eth-sepolia.g.alchemy.com/v2/bbJGLIVfLEewWRAxb8pAh-Y67-OiaQjL',
-      accounts: ['29e15429d4a5e3d6539a86c766fd1d2f44d154943c593842675526522529759e'] // DD NOT UPLOAD WITH PRIVATE KEY better to use env vars
-    }
   },
 };

@@ -6,5 +6,22 @@
   "dependencies": {
     "ethers": "^6.7.1",
     "web3": "^4.1.2"
-  }
+  },
+  "name": "cryptocast",
+  "description": "",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WallSmacker8555/CryptoCast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WallSmacker8555/CryptoCast/issues"
+  },
+  "homepage": "https://github.com/WallSmacker8555/CryptoCast#readme"
 }
