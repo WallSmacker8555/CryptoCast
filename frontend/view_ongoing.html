@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CryptoCast</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    </head>
-    <body>
-        <div>
-            <img src="../img/CryptoCastLogo.png" class = "logo">
-            <br><br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script type="module" src="create_election.js"></script>
+</head>
+
+<body>
+    <div>
+        <a href="index.html"><img src="../img/CryptoCastLogo.png" class="logo"></a>
+        <br>
+        <div class="creat_elect_form">
+            <form action="creation_confirmation.html">
+                <fieldset class="creat_elect_set">
+                    <legend><strong>Mayor of Madison</strong></legend>
+                    <label for="start"><em>Start date: 09/30/2023</em></label><br>
+                    <label for="end"><em>End date: 10/15/2023</em></label><br><br>
+                    <label for="can1"><em>Satya Rhodes-Conway</em></label><br>
+                    <label>Count: <strong>1</strong></label><br><br>
+                    <label for="can2"><em>Lee T. Code</em></label><br>
+                    <label>Count: <strong>0</strong></label><br><br>
+                    <label for="can3"><em>Lebloque Chain</em></label><br>
+                    <label>Count: <strong>2</strong></label>
+                </fieldset>
+            </form>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

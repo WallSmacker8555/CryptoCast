@@ -14,9 +14,9 @@
     <div>
         <a href="index.html"><img src="../img/CryptoCastLogo.png" class="logo"></a>
         <br>
-        <div class="reg_form">
-            <form>
-                <fieldset class="reg_field_set">
+        <div class="creat_elect_form">
+            <form action="creation_confirmation.html">
+                <fieldset class="creat_elect_set">
                     <legend><strong>Election Details</strong></legend>
                     <label for="election_name"><em>Name</em></label><br>
                     <input type="text" id="name" placeholder="eg. '24 Federal Election"><br>
@@ -24,8 +24,14 @@
                     <input type="text" id="start" placeholder="MM/DD/YYYY"><br>
                     <label for="end"><em>End date</em></label><br>
                     <input type="text" id="end" placeholder="eg. MM/DD/YYYY"><br>
+                    <label for="can1"><em>1st Candidate</em></label><br>
+                    <input type="text" id="can1" placeholder="eg. Jane Doe"><br>
+                    <label for="can2"><em>2nd Candidate</em></label><br>
+                    <input type="text" id="can2" placeholder="eg. Johnny Appleseed"><br>
+                    <label for="can2"><em>3rd Candidate</em></label><br>
+                    <input type="text" id="can3" placeholder="eg. Bucky Badger"><br>
                     <p></p>
-                    <input type="submit" onclick=createElection() value="Submit" class="reg_sub">
+                    <input type="submit" onclick=createElection() value="Submit" class="creat_elect_sub">
                 </fieldset>
             </form>
         </div>

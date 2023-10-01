@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cast Your Vote</title>
+        <script type="text/javascript" src="create_election.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     </head>
@@ -15,14 +16,14 @@
                 <form id="ballot_info" action="ballot_confirmation.html">
                     <fieldset class="ballot_field_set">
                         <legend><strong>Candidates</strong></legend><br>
-                        <label for="fcand"><em>First Candidate</em></label>
+                        <label for="fcand"><em>Satya Rhodes-Conway</em></label>
                         <input type="radio" id="fcand" name="vote_cand"><br><br>
-                        <label for="scand"><em>Second Candidate</em></label>
+                        <label for="scand"><em>Lee T. Code</em></label>
                         <input type="radio" id="scand" name="vote_cand"><br><br>
-                        <label for="tcand"><em>Third Candidate</em></label>
+                        <label for="tcand"><em>Lebloque Chain</em></label>
                         <input type="radio" id="tcand" name="vote_cand"><br>
                         <br>
-                        <input type="submit" value="Submit Vote" class="ballot_sub">
+                        <input type="submit" onclick=countVote() value="Submit Vote" class="ballot_sub">
                     </fieldset>
                 </form>
             </div>
