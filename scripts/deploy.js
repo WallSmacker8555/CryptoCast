@@ -8,12 +8,11 @@ const hre = require("hardhat");
 
 async function main() {
   electionFactory = await hre.ethers.deployContract("ElectionFactory");
-  window.data = electionFactory;
+  //localStorage.setItem("contract", electionFactory);
   await electionFactory.waitForDeployment();
   
   console.log("electionFactory deployed");
   const addr = await electionFactory.getAddress();
-  
   console.log("address: " + addr + "\n");
 }
 
